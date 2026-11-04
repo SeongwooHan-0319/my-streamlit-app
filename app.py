@@ -10,11 +10,12 @@ Streamlit Community Cloud는 로컬 파일의 영구 보존을 보장하지 않�
 
 from __future__ import annotations
 
-import os
+import os, base64, json, requests
 import re
 import sqlite3
 from contextlib import closing
 from pathlib import Path
+from openai import OpenAI
 
 import streamlit as st
 
